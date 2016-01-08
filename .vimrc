@@ -6,6 +6,10 @@ set tabstop=4
 :let mapleader=","
 set autoindent "自动缩紧 
 set shiftwidth=4
+"使用语法高亮定义代码折叠
+set foldmethod=syntax
+""打开文件是默认不折叠代码
+set foldlevelstart=99
 vmap c c<ESC>
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -31,11 +35,12 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Avoid a name conflict with L9
 "Plugin 'user/L9', {'name': 'newL9'}
-Plugin 'Valloric/YouCompleteMe'
+
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'chriskempson/base16-vim'
+"Plugin 'chriskempson/base16-vim'
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'Valloric/YouCompleteMe'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
