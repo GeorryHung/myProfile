@@ -90,6 +90,17 @@ alias l='ls -CF'
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US.UTF-8"
+export maven="/home/georry/Develop/maven/my-app"
+export maven_java="/home/georry/Develop/maven/my-app/src/main/java/com/mycompany/app"
+export ycmpy="/home/georry/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm"
+export maven_test=$maven/src/test
+export nas="/home/georry/nas-hadoop/hadoop-hdfs-project/hadoop-hdfs-nas/src/main/native/hdfs-cpp/src"
+#时间
+export TZ="Asia/Beijing"
+
+
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
