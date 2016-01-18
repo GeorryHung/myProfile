@@ -10,7 +10,6 @@ set shiftwidth=4
 set foldmethod=indent
 ""打开文件是默认不折叠代码
 set foldlevelstart=99
-vmap c c<ESC>
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -28,7 +27,7 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'L9'
 " Git plugin not hosted on GitHub
 "Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
+ "git repos on your local machine (i.e. when working on your own plugin)
 "Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
@@ -79,8 +78,10 @@ nnoremap <leader>n :lnext<CR>
 nnoremap <leader>gd :YcmCompleter GetDoc<CR>
 
 " NerdTree
-map <C-n> :NERDTreeToggle<CR>
+map <C-b> :NERDTreeToggle<CR>
 " NerdCommenter
+vnoremap <C-m> :call NERDComment(0,"toggle")<CR>
+nnoremap <C-m> :call NERDComment(0,"toggle")<CR>
 "bronson/vim-crosshairs
 :set cursorline    " enable the horizontal line
 :set cursorcolumn  " enable the vertical line
@@ -94,5 +95,5 @@ let base16colorspace=256
 map <C-F12>:!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 "taglist
 let Tlist_Use_Right_Window=1
-nnoremap <C-m> :TlistToggle<CR>
-vnoremap <C-m> :TlistToggle<CR>
+nnoremap <C-n> :TlistToggle<CR>
+vnoremap <C-n> :TlistToggle<CR>
