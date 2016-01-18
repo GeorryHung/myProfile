@@ -78,10 +78,10 @@ nnoremap <leader>n :lnext<CR>
 nnoremap <leader>gd :YcmCompleter GetDoc<CR>
 
 " NerdTree
-map <C-b> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
 " NerdCommenter
-vnoremap <C-m> :call NERDComment(0,"toggle")<CR>
-nnoremap <C-m> :call NERDComment(0,"toggle")<CR>
+vnoremap <Space> :call NERDComment(0,"toggle")<CR>
+nnoremap <Space> :call NERDComment(0,"toggle")<CR>
 "bronson/vim-crosshairs
 :set cursorline    " enable the horizontal line
 :set cursorcolumn  " enable the vertical line
@@ -95,5 +95,5 @@ let base16colorspace=256
 map <C-F12>:!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 "taglist
 let Tlist_Use_Right_Window=1
-nnoremap <C-n> :TlistToggle<CR>
-vnoremap <C-n> :TlistToggle<CR>
+nnoremap <C-m> :TlistToggle<CR>{<C-w>l}
+vnoremap <C-m> :TlistToggle<CR>{<C-w>l}
