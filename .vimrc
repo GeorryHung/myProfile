@@ -79,6 +79,8 @@ nnoremap <leader>gd :YcmCompleter GetDoc<CR>
 
 " NerdTree
 map <C-n> :NERDTreeToggle<CR>
+map  <C-l> :tabn<CR>
+map  <C-h> :tabp<CR>
 " NerdCommenter
 vnoremap <Space> :call NERDComment(0,"toggle")<CR>
 nnoremap <Space> :call NERDComment(0,"toggle")<CR>
